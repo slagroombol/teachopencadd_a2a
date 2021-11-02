@@ -746,7 +746,7 @@ described substructures which can help to identify such PAINS and provided a lis
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -771,7 +771,7 @@ Dataframe shape: (3545, 10)
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -794,10 +794,10 @@ Dataframe shape: (3545, 10)
 <tr style="text-align: right;">
 <th></th>
 <th>molecule_chembl_id</th>
-<th>IC50</th>
+<th>Ki</th>
 <th>units</th>
 <th>smiles</th>
-<th>pIC50</th>
+<th>pKi</th>
 <th>ro5_fulfilled</th>
 </tr>
 </thead>
@@ -852,22 +852,22 @@ Dataframe shape: (3545, 10)
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># Add molecule column</span>
-<span class="n">PandasTools</span><span class="o">.</span><span class="n">AddMoleculeColumnToFrame</span><span class="p">(</span><span class="n">egfr_data</span><span class="p">,</span> <span class="n">smilesCol</span><span class="o">=</span><span class="s2">"smiles"</span><span class="p">)</span>
+<span class="n">PandasTools</span><span class="o">.</span><span class="n">AddMoleculeColumnToFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">smilesCol</span><span class="o">=</span><span class="s2">"smiles"</span><span class="p">)</span>
 <span class="c1"># Draw first 3 molecules</span>
 <span class="n">Chem</span><span class="o">.</span><span class="n">Draw</span><span class="o">.</span><span class="n">MolsToGridImage</span><span class="p">(</span>
-    <span class="nb">list</span><span class="p">(</span><span class="n">egfr_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">ROMol</span><span class="p">),</span>
-    <span class="n">legends</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">egfr_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">molecule_chembl_id</span><span class="p">),</span>
+    <span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">ROMol</span><span class="p">),</span>
+    <span class="n">legends</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">molecule_chembl_id</span><span class="p">),</span>
 <span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -879,7 +879,7 @@ Dataframe shape: (3545, 10)
 <h3 id="Filter-for-PAINS">Filter for PAINS<a class="headerlink" href="#Filter-for-PAINS" title="Permalink to this headline">¶</a></h3>
 <p>The PAINS filter is already implemented in RDKit (<a class="reference external" href="http://rdkit.org/docs/source/rdkit.Chem.rdfiltercatalog.html">documentation</a>). Such pre-defined filters can be applied via the <code class="docutils literal notranslate"><span class="pre">FilterCatalog</span></code> class. Let’s learn how it can be used.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -891,7 +891,7 @@ Dataframe shape: (3545, 10)
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -923,10 +923,10 @@ Dataframe shape: (3545, 10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "3b37d8011ede430792ea35994e6e7af6", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "3e9d6ecdb6aa47978a1ccb3895b35db1", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -947,7 +947,7 @@ Number of compounds without PAINS: 3452
 </div>
 <p>Let’s have a look at the first 3 identified PAINS.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -959,7 +959,7 @@ Number of compounds without PAINS: 3452
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -971,7 +971,7 @@ Number of compounds without PAINS: 3452
 <h3 id="Filter-and-highlight-unwanted-substructures">Filter and highlight unwanted substructures<a class="headerlink" href="#Filter-and-highlight-unwanted-substructures" title="Permalink to this headline">¶</a></h3>
 <p>Some lists of unwanted substructures, like PAINS, are already implemented in RDKit. However, it is also possible to use an external list and get the substructure matches manually. Here, we use the list provided in the supporting information from Brenk <em>et al.</em> (<a class="reference external" href="https://onlinelibrary.wiley.com/doi/full/10.1002/cmdc.200700139">Chem. Med. Chem. (2008), 3, 535-44</a>).</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -992,7 +992,7 @@ Number of unwanted substructures in collection: 104
 </div>
 <p>Let’s have a look at a few substructures.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1004,7 +1004,7 @@ Number of unwanted substructures in collection: 104
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -1013,14 +1013,14 @@ Number of unwanted substructures in collection: 104
 </div>
 <p>Search our filtered dataframe for matches with these unwanted substructures.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># search for unwanted substructure</span>
 <span class="n">matches</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">clean</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">egfr_data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">(),</span> <span class="n">total</span><span class="o">=</span><span class="n">egfr_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">iterrows</span><span class="p">(),</span> <span class="n">total</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
     <span class="n">molecule</span> <span class="o">=</span> <span class="n">Chem</span><span class="o">.</span><span class="n">MolFromSmiles</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">smiles</span><span class="p">)</span>
     <span class="n">match</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">substructure</span> <span class="ow">in</span> <span class="n">substructures</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
@@ -1038,7 +1038,7 @@ Number of unwanted substructures in collection: 104
         <span class="n">clean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
 
 <span class="n">matches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">matches</span><span class="p">)</span>
-<span class="n">egfr_data</span> <span class="o">=</span> <span class="n">egfr_data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">clean</span><span class="p">]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">clean</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1046,10 +1046,10 @@ Number of unwanted substructures in collection: 104
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "5d84d0600dba47fb9a44fa4ca1e74d03", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "2b73bced6b6f4e5dbd1bdef19f6160f8", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1065,7 +1065,7 @@ Number of unwanted substructures in collection: 104
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 Number of found unwanted substructure: 836
-Number of compounds without unwanted substructure: 2835
+Number of compounds without unwanted substructure: 3452
 </pre></div></div>
 </div>
 </section>
@@ -1073,7 +1073,7 @@ Number of compounds without unwanted substructure: 2835
 <h3 id="Highlight-substructures">Highlight substructures<a class="headerlink" href="#Highlight-substructures" title="Permalink to this headline">¶</a></h3>
 <p>Let’s have a look at the first 3 identified unwanted substructures. Since we have access to the underlying SMARTS patterns we can highlight the substructures within the RDKit molecules.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1089,7 +1089,7 @@ Number of compounds without unwanted substructure: 2835
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -1101,7 +1101,7 @@ Number of compounds without unwanted substructure: 2835
 <h3 id="Substructure-statistics">Substructure statistics<a class="headerlink" href="#Substructure-statistics" title="Permalink to this headline">¶</a></h3>
 <p>Finally, we want to find the most frequent substructure found in our data set. The Pandas <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> provides convenient methods to group containing data and to retrieve group sizes.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1114,7 +1114,7 @@ Number of compounds without unwanted substructure: 2835
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -1158,6 +1158,15 @@ use <code class="docutils literal notranslate"><span class="pre">GetMatches()</s
 <li><p>Can you find situations when some unwanted substructures would not need to be removed?</p></li>
 <li><p>How are the substructures we used in this tutorial encoded?</p></li>
 </ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
 <script type="application/vnd.jupyter.widget-state+json">
 {"state": {"1f8ab4e1052f44fbb0c08c8103af9cd6": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"layout": "IPY_MODEL_f3867fd7667240bcb9f0cd2c980c756c", "style": "IPY_MODEL_3485e31d3ec34586affcdb824d29fa43", "value": " 4635/4635 [00:27&lt;00:00, 269.79it/s]"}}, "220cac4d9f614ee4a2802d460f9f7b28": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatProgressModel", "state": {"bar_style": "success", "layout": "IPY_MODEL_2d52e6a56b38408c9d71bf181fd303a9", "max": 4635, "style": "IPY_MODEL_7e4b0b18ad1b464cbd396916caa97c2c", "value": 4635}}, "22b2351a426948d3b7636eee8b863dad": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "2d52e6a56b38408c9d71bf181fd303a9": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "2d77feecd80b42beb3e483923e795583": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "3485e31d3ec34586affcdb824d29fa43": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"description_width": ""}}, "50451bf8f3e9414ba91d8465b936e454": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatProgressModel", "state": {"bar_style": "success", "layout": "IPY_MODEL_7a85b484b444480abddc6096263e39dd", "max": 4227, "style": "IPY_MODEL_d73dfdd68ed248eca3408eccd1797245", "value": 4227}}, "61549d9bbe834e73818590ad20cb5947": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"description_width": ""}}, "6ad2549622814b28870bc73784527264": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "7a85b484b444480abddc6096263e39dd": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "7e4b0b18ad1b464cbd396916caa97c2c": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ProgressStyleModel", "state": {"description_width": ""}}, "81bf31469aeb442aa720e871d502d8d6": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"description_width": ""}}, "8cfee89eb6b1442caa8ca1970072f944": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "a4409fcdbec641e08512cd46f9b81646": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"children": ["IPY_MODEL_e41caae531644dcf9450006d9a995238", "IPY_MODEL_220cac4d9f614ee4a2802d460f9f7b28", "IPY_MODEL_1f8ab4e1052f44fbb0c08c8103af9cd6"], "layout": "IPY_MODEL_2d77feecd80b42beb3e483923e795583"}}, "bb3bd89af5774ee9b9e52057c0adfde8": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HBoxModel", "state": {"children": ["IPY_MODEL_d1176b1e6c4541d4bc6993ad307b9ecb", "IPY_MODEL_50451bf8f3e9414ba91d8465b936e454", "IPY_MODEL_d4cf1bea7ea446f9b17e380bb5bc15df"], "layout": "IPY_MODEL_8cfee89eb6b1442caa8ca1970072f944"}}, "c344cb6e99d144648471048ebb024b7f": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "DescriptionStyleModel", "state": {"description_width": ""}}, "d1176b1e6c4541d4bc6993ad307b9ecb": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"layout": "IPY_MODEL_e82549c17c8f496e9913e0f6472cf179", "style": "IPY_MODEL_61549d9bbe834e73818590ad20cb5947", "value": "100%"}}, "d4cf1bea7ea446f9b17e380bb5bc15df": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"layout": "IPY_MODEL_6ad2549622814b28870bc73784527264", "style": "IPY_MODEL_c344cb6e99d144648471048ebb024b7f", "value": " 4227/4227 [01:10&lt;00:00, 65.27it/s]"}}, "d73dfdd68ed248eca3408eccd1797245": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "ProgressStyleModel", "state": {"description_width": ""}}, "e41caae531644dcf9450006d9a995238": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "HTMLModel", "state": {"layout": "IPY_MODEL_22b2351a426948d3b7636eee8b863dad", "style": "IPY_MODEL_81bf31469aeb442aa720e871d502d8d6", "value": "100%"}}, "e82549c17c8f496e9913e0f6472cf179": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}, "f3867fd7667240bcb9f0cd2c980c756c": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {}}}, "version_major": 2, "version_minor": 0}
 </script></section>
