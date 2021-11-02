@@ -249,262 +249,42 @@
     
     
       <a href="../talktorials.html" class="md-nav__link">Talktorials by collection</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="../talktorials.html#jcim-2019" class="md-nav__link">JCIM 2019</a>
       
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../talktorials.html#ligand-based-cheminformatics" class="md-nav__link">Ligand-based cheminformatics</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../talktorials.html#structural-biology" class="md-nav__link">Structural biology</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../talktorials.html#online-apis-servers" class="md-nav__link">Online APIs/servers</a>
+      
+    
+    </li></ul>
     
     </li>
     <li class="md-nav__item">
     
     
       <a href="../all_talktorials.html" class="md-nav__link">Complete list of talktorials</a>
-      <ul class="md-nav__list"> 
-    <li class="md-nav__item">
-    
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    <label class="md-nav__link md-nav__link--active" for="__toc"> T001 · Compound data acquisition (ChEMBL) </label>
-    
-      <a href="#" class="md-nav__link md-nav__link--active">T001 · Compound data acquisition (ChEMBL)</a>
       
-        
-<nav class="md-nav md-nav--secondary">
-    <label class="md-nav__title" for="__toc">Contents</label>
-  <ul class="md-nav__list" data-md-scrollfix="">
-        <li class="md-nav__item"><a href="#talktorials-t001-query-chembl--page-root" class="md-nav__link">T001 · Compound data acquisition (ChEMBL)</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#Aim-of-this-talktorial" class="md-nav__link">Aim of this talktorial</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#Contents-in-Theory" class="md-nav__link">Contents in <em>Theory</em></a>
-        </li>
-        <li class="md-nav__item"><a href="#Contents-in-Practical" class="md-nav__link">Contents in <em>Practical</em></a>
-        </li>
-        <li class="md-nav__item"><a href="#References" class="md-nav__link">References</a>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#Theory" class="md-nav__link">Theory</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#ChEMBL-database" class="md-nav__link">ChEMBL database</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#ChEMBL-web-services" class="md-nav__link">ChEMBL web services</a>
-        </li>
-        <li class="md-nav__item"><a href="#ChEMBL-webresource-client" class="md-nav__link">ChEMBL webresource client</a>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#Compound-activity-measures" class="md-nav__link">Compound activity measures</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#IC50-measure" class="md-nav__link">IC50 measure</a>
-        </li>
-        <li class="md-nav__item"><a href="#pIC50-value" class="md-nav__link">pIC50 value</a>
-        </li></ul>
-            </nav>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#Practical" class="md-nav__link">Practical</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#Connect-to-ChEMBL-database" class="md-nav__link">Connect to ChEMBL database</a>
-        </li>
-        <li class="md-nav__item"><a href="#Get-target-data-(EGFR-kinase)" class="md-nav__link">Get target data (EGFR kinase)</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#Fetch-target-data-from-ChEMBL" class="md-nav__link">Fetch target data from ChEMBL</a>
-        </li>
-        <li class="md-nav__item"><a href="#Download-target-data-from-ChEMBL" class="md-nav__link">Download target data from ChEMBL</a>
-        </li>
-        <li class="md-nav__item"><a href="#Select-target-(target-ChEMBL-ID)" class="md-nav__link">Select target (target ChEMBL ID)</a>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#Get-bioactivity-data" class="md-nav__link">Get bioactivity data</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#Fetch-bioactivity-data-for-the-target-from-ChEMBL" class="md-nav__link">Fetch bioactivity data for the target from ChEMBL</a>
-        </li>
-        <li class="md-nav__item"><a href="#Download-bioactivity-data-from-ChEMBL" class="md-nav__link">Download bioactivity data from ChEMBL</a>
-        </li>
-        <li class="md-nav__item"><a href="#Preprocess-and-filter-bioactivity-data" class="md-nav__link">Preprocess and filter bioactivity data</a>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#Get-compound-data" class="md-nav__link">Get compound data</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#Fetch-compound-data-from-ChEMBL" class="md-nav__link">Fetch compound data from ChEMBL</a>
-        </li>
-        <li class="md-nav__item"><a href="#Download-compound-data-from-ChEMBL" class="md-nav__link">Download compound data from ChEMBL</a>
-        </li>
-        <li class="md-nav__item"><a href="#Preprocess-and-filter-compound-data" class="md-nav__link">Preprocess and filter compound data</a>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#Output-(bioactivity-compound)-data" class="md-nav__link">Output (bioactivity-compound) data</a><nav class="md-nav">
-              <ul class="md-nav__list">
-        <li class="md-nav__item"><a href="#Merge-both-datasets" class="md-nav__link">Merge both datasets</a>
-        </li>
-        <li class="md-nav__item"><a href="#Add-pIC50-values" class="md-nav__link">Add pIC50 values</a>
-        </li>
-        <li class="md-nav__item"><a href="#Draw-compound-data" class="md-nav__link">Draw compound data</a>
-        </li>
-        <li class="md-nav__item"><a href="#Freeze-output-data-to-ChEMBL-27" class="md-nav__link">Freeze output data to ChEMBL 27</a>
-        </li>
-        <li class="md-nav__item"><a href="#Write-output-data-to-file" class="md-nav__link">Write output data to file</a>
-        </li></ul>
-            </nav>
-        </li></ul>
-            </nav>
-        </li>
-        <li class="md-nav__item"><a href="#Discussion" class="md-nav__link">Discussion</a>
-        </li>
-        <li class="md-nav__item"><a href="#Quiz" class="md-nav__link">Quiz</a>
-        </li></ul>
-            </nav>
-        </li>
-    
-<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/talktorials/T001_query_chembl.nblink.txt">Show Source</a> </li>
-
-  </ul>
-</nav>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T002_compound_adme.html" class="md-nav__link">T002 · Molecular filtering: ADME and lead-likeness criteria</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T003_compound_unwanted_substructures.html" class="md-nav__link">T003 · Molecular filtering: unwanted substructures</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T004_compound_similarity.html" class="md-nav__link">T004 · Ligand-based screening: compound similarity</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T005_compound_clustering.html" class="md-nav__link">T005 · Compound clustering</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T006_compound_maximum_common_substructures.html" class="md-nav__link">T006 · Maximum common substructure</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T007_compound_activity_machine_learning.html" class="md-nav__link">T007 · Ligand-based screening: machine learning</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T008_query_pdb.html" class="md-nav__link">T008 · Protein data acquisition: Protein Data Bank (PDB)</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T009_compound_ensemble_pharmacophores.html" class="md-nav__link">T009 · Ligand-based pharmacophores</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T010_binding_site_comparison.html" class="md-nav__link">T010 · Binding site similarity and off-target prediction</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T011_query_online_api_webservices.html" class="md-nav__link">T011 · Querying online API webservices</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T012_query_klifs.html" class="md-nav__link">T012 · Data acquisition from KLIFS</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T013_query_pubchem.html" class="md-nav__link">T013 · Data acquisition from PubChem</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T014_binding_site_detection.html" class="md-nav__link">T014 · Binding site detection</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T015_protein_ligand_docking.html" class="md-nav__link">T015 · Protein ligand docking</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T016_protein_ligand_interactions.html" class="md-nav__link">T016 · Protein-ligand interactions</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T017_advanced_nglview_usage.html" class="md-nav__link">T017 · Advanced NGLview usage</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T019_md_simulation.html" class="md-nav__link">T019 · Molecular dynamics simulation</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T020_md_analysis.html" class="md-nav__link">T020 · Analyzing molecular dynamics simulations</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T021_one_hot_encoding.html" class="md-nav__link">T021 · One-Hot Encoding</a>
-      
-    
-    </li>
-    <li class="md-nav__item">
-    
-    
-      <a href="T022_ligand_based_screening_neural_network.html" class="md-nav__link">T022 · Ligand-based screening: neural networks</a>
-      
-    
-    </li></ul>
     
     </li>
     <li class="md-nav__item">
@@ -651,8 +431,6 @@
         <li class="md-nav__item"><a href="#Add-pIC50-values" class="md-nav__link">Add pIC50 values</a>
         </li>
         <li class="md-nav__item"><a href="#Draw-compound-data" class="md-nav__link">Draw compound data</a>
-        </li>
-        <li class="md-nav__item"><a href="#Freeze-output-data-to-ChEMBL-27" class="md-nav__link">Freeze output data to ChEMBL 27</a>
         </li>
         <li class="md-nav__item"><a href="#Write-output-data-to-file" class="md-nav__link">Write output data to file</a>
         </li></ul>
@@ -1055,6 +833,7 @@ representation of a <code class="docutils literal notranslate"><span class="pre"
 <img alt="Wiki_Example_IC50_curve_demonstrating_visually_how_IC50_is_derived" src="../_images/Wiki_Example_IC50_curve_demonstrating_visually_how_IC50_is_derived.png"/>
 <p><em>Figure 2:</em> Visual demonstration of how to derive an IC50 value: (i) Arrange inhibition data on y-axis and log(concentration) on x-axis. (ii) Identify maximum and minimum inhibition. (iii) The IC50 is the concentration at which the curve passes through the 50% inhibition level. Figure <a class="reference external" href="https://en.wikipedia.org/wiki/IC50#/media/File:Example_IC50_curve_demonstrating_visually_how_IC50_is_derived.png">“Example IC50 curve demonstrating visually how IC50 is derived”</a> by JesseAlanGordon is licensed
 under <a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+<p>We will also use the Ki value in this tutorial: <a class="reference external" href="https://www.aatbio.com/resources/faq-frequently-asked-questions/What-is-the-difference-between-Ki-and-IC50-in-enzyme-inhibition#:~:text=The%20value%20Ki%20is%20the,half%20of%20the%20uninhibited%20value">https://www.aatbio.com/resources/faq-frequently-asked-questions/What-is-the-difference-between-Ki-and-IC50-in-enzyme-inhibition#:~:text=The%20value%20Ki%20is%20the,half%20of%20the%20uninhibited%20value</a>.</p>
 </section>
 <section id="pIC50-value">
 <h4 id="pIC50-value">pIC50 value<a class="headerlink" href="#pIC50-value" title="Permalink to this headline">¶</a></h4>
@@ -1066,6 +845,7 @@ under <a class="reference external" href="https://creativecommons.org/licenses/b
 </ul>
 <p>Other activity measures:</p>
 <p>Besides, IC50 and pIC50, other bioactivity measures are used, such as the equilibrium constant <a class="reference external" href="https://en.wikipedia.org/wiki/Equilibrium_constant">KI</a> and the half maximal effective concentration <a class="reference external" href="https://en.wikipedia.org/wiki/EC50">EC50</a>.</p>
+<p>Similarly the Ki value can be converted to a pKi value.</p>
 </section>
 </section>
 </section>
@@ -1076,7 +856,7 @@ under <a class="reference external" href="https://creativecommons.org/licenses/b
 <h3 id="Connect-to-ChEMBL-database">Connect to ChEMBL database<a class="headerlink" href="#Connect-to-ChEMBL-database" title="Permalink to this headline">¶</a></h3>
 <p>First, the ChEMBL webresource client as well as other Python libraries are imported.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1094,7 +874,7 @@ under <a class="reference external" href="https://creativecommons.org/licenses/b
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1105,7 +885,7 @@ under <a class="reference external" href="https://creativecommons.org/licenses/b
 </div>
 <p>Next, we create resource objects for API access.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1116,7 +896,7 @@ under <a class="reference external" href="https://creativecommons.org/licenses/b
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1125,7 +905,7 @@ under <a class="reference external" href="https://creativecommons.org/licenses/b
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -1142,18 +922,18 @@ chembl_webresource_client.query_set.QuerySet
 </ul>
 <p>Select a different UniProt ID, if you are interested in another target.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">uniprot_id</span> <span class="o">=</span> <span class="s2">"P00533"</span>
+<span></span><span class="n">uniprot_id</span> <span class="o">=</span> <span class="s2">"P29274"</span>
 </pre></div>
 </div>
 </div>
 <section id="Fetch-target-data-from-ChEMBL">
 <h4 id="Fetch-target-data-from-ChEMBL">Fetch target data from ChEMBL<a class="headerlink" href="#Fetch-target-data-from-ChEMBL" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1182,7 +962,7 @@ The type of the targets is "&lt;class 'chembl_webresource_client.query_set.Query
 <div><p>QuerySets are lazy – the act of creating a QuerySet does not involve any database activity. You can stack filters together all day long, and Django will actually not run the query until the QuerySet is evaluated. (<a class="reference external" href="https://docs.djangoproject.com/en/3.0/topics/db/queries/#querysets-are-lazy">querysets-are-lazy</a>)</p>
 </div></blockquote>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1192,7 +972,7 @@ The type of the targets is "&lt;class 'chembl_webresource_client.query_set.Query
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1224,58 +1004,58 @@ The type of the targets is "&lt;class 'chembl_webresource_client.query_set.Query
 <tr>
 <th>0</th>
 <td>Homo sapiens</td>
-<td>Epidermal growth factor receptor erbB1</td>
-<td>CHEMBL203</td>
+<td>Adenosine A2a receptor</td>
+<td>CHEMBL251</td>
 <td>SINGLE PROTEIN</td>
 </tr>
 <tr>
 <th>1</th>
 <td>Homo sapiens</td>
-<td>Epidermal growth factor receptor erbB1</td>
-<td>CHEMBL203</td>
+<td>Adenosine A2a receptor</td>
+<td>CHEMBL251</td>
 <td>SINGLE PROTEIN</td>
 </tr>
 <tr>
 <th>2</th>
 <td>Homo sapiens</td>
-<td>Epidermal growth factor receptor and ErbB2 (HE...</td>
-<td>CHEMBL2111431</td>
+<td>Adenosine A2 receptor</td>
+<td>CHEMBL2094257</td>
 <td>PROTEIN FAMILY</td>
 </tr>
 <tr>
 <th>3</th>
 <td>Homo sapiens</td>
-<td>Epidermal growth factor receptor</td>
-<td>CHEMBL2363049</td>
-<td>PROTEIN FAMILY</td>
+<td>Adenosine receptors; A2a &amp; A3</td>
+<td>CHEMBL2095213</td>
+<td>SELECTIVITY GROUP</td>
 </tr>
 <tr>
 <th>4</th>
 <td>Homo sapiens</td>
-<td>MER intracellular domain/EGFR extracellular do...</td>
-<td>CHEMBL3137284</td>
-<td>CHIMERIC PROTEIN</td>
+<td>Adenosine receptors; A1 &amp; A2</td>
+<td>CHEMBL2096679</td>
+<td>SELECTIVITY GROUP</td>
 </tr>
 <tr>
 <th>5</th>
 <td>Homo sapiens</td>
-<td>Protein cereblon/Epidermal growth factor receptor</td>
-<td>CHEMBL4523680</td>
-<td>PROTEIN-PROTEIN INTERACTION</td>
+<td>Adenosine receptors; A1 &amp; A2a</td>
+<td>CHEMBL2096982</td>
+<td>SELECTIVITY GROUP</td>
 </tr>
 <tr>
 <th>6</th>
 <td>Homo sapiens</td>
-<td>EGFR/PPP1CA</td>
-<td>CHEMBL4523747</td>
-<td>PROTEIN-PROTEIN INTERACTION</td>
+<td>Adenosine receptor</td>
+<td>CHEMBL2111329</td>
+<td>PROTEIN FAMILY</td>
 </tr>
 <tr>
 <th>7</th>
 <td>Homo sapiens</td>
-<td>VHL/EGFR</td>
-<td>CHEMBL4523998</td>
-<td>PROTEIN-PROTEIN INTERACTION</td>
+<td>Adenosine receptors; A2a &amp; A2b</td>
+<td>CHEMBL4296621</td>
+<td>SELECTIVITY GROUP</td>
 </tr>
 </tbody>
 </table>
@@ -1287,7 +1067,7 @@ The type of the targets is "&lt;class 'chembl_webresource_client.query_set.Query
 <p>After checking the entries, we select the first entry as our target of interest:</p>
 <p><code class="docutils literal notranslate"><span class="pre">CHEMBL203</span></code>: It is a single protein and represents the human Epidermal growth factor receptor (EGFR, also named erbB1)</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1297,21 +1077,21 @@ The type of the targets is "&lt;class 'chembl_webresource_client.query_set.Query
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-organism                                      Homo sapiens
-pref_name           Epidermal growth factor receptor erbB1
-target_chembl_id                                 CHEMBL203
-target_type                                 SINGLE PROTEIN
+organism                      Homo sapiens
+pref_name           Adenosine A2a receptor
+target_chembl_id                 CHEMBL251
+target_type                 SINGLE PROTEIN
 Name: 0, dtype: object
 </pre></div></div>
 </div>
 <p>Save selected ChEMBL ID.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1326,7 +1106,7 @@ Name: 0, dtype: object
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-The target ChEMBL ID is CHEMBL203
+The target ChEMBL ID is CHEMBL251
 </pre></div></div>
 </div>
 </section>
@@ -1344,12 +1124,12 @@ The target ChEMBL ID is CHEMBL203
 <li><p>binding data (assay type <code class="docutils literal notranslate"><span class="pre">'B'</span></code>).</p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">bioactivities</span> <span class="o">=</span> <span class="n">bioactivities_api</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
-    <span class="n">target_chembl_id</span><span class="o">=</span><span class="n">chembl_id</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"IC50"</span><span class="p">,</span> <span class="n">relation</span><span class="o">=</span><span class="s2">"="</span><span class="p">,</span> <span class="n">assay_type</span><span class="o">=</span><span class="s2">"B"</span>
+    <span class="n">target_chembl_id</span><span class="o">=</span><span class="n">chembl_id</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"Ki"</span><span class="p">,</span> <span class="n">relation</span><span class="o">=</span><span class="s2">"="</span><span class="p">,</span> <span class="n">assay_type</span><span class="o">=</span><span class="s2">"B"</span>
 <span class="p">)</span><span class="o">.</span><span class="n">only</span><span class="p">(</span>
     <span class="s2">"activity_id"</span><span class="p">,</span>
     <span class="s2">"assay_chembl_id"</span><span class="p">,</span>
@@ -1373,12 +1153,12 @@ The target ChEMBL ID is CHEMBL203
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Length and type of bioactivities object: 8816, &lt;class 'chembl_webresource_client.query_set.QuerySet'&gt;
+Length and type of bioactivities object: 4629, &lt;class 'chembl_webresource_client.query_set.QuerySet'&gt;
 </pre></div></div>
 </div>
-<p>Our bioactivity set contains 8463 entries, each holding the following information.</p>
+<p>Our bioactivity set contains 4629 entries, each holding the following information.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1396,24 +1176,24 @@ Length and type of first element: 13, &lt;class 'dict'&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{'activity_id': 32260,
- 'assay_chembl_id': 'CHEMBL674637',
- 'assay_description': 'Inhibitory activity towards tyrosine phosphorylation for the epidermal growth factor-receptor kinase',
+{'activity_id': 38792,
+ 'assay_chembl_id': 'CHEMBL643209',
+ 'assay_description': 'Displacement of [3H]ZM-241385 from human adenosine A2A receptors expressed in HEK293 cells',
  'assay_type': 'B',
- 'molecule_chembl_id': 'CHEMBL68920',
+ 'molecule_chembl_id': 'CHEMBL132806',
  'relation': '=',
  'standard_units': 'nM',
- 'standard_value': '41.0',
- 'target_chembl_id': 'CHEMBL203',
+ 'standard_value': '57.0',
+ 'target_chembl_id': 'CHEMBL251',
  'target_organism': 'Homo sapiens',
- 'type': 'IC50',
- 'units': 'uM',
- 'value': '0.041'}
+ 'type': 'Ki',
+ 'units': 'nM',
+ 'value': '57.0'}
 </pre></div></div>
 </div>
 </section>
@@ -1426,15 +1206,16 @@ Length and type of first element: 13, &lt;class 'dict'&gt;
 <details><summary><p>Load a local version of the data (in case you encounter any problems while fetching the data)</p>
 </summary><p>If you experience difficulties to query the ChEMBL database, we also provide the resulting dataframe you will construct in the cell below. If you want to use the saved version, use the following code instead to obtain <code class="docutils literal notranslate"><span class="pre">bioactivities_df</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># replace first line in cell below with this other line</span>
-<span class="n">bioactivities_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"EGFR_bioactivities_CHEMBL27.csv.zip"</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">bioactivities_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"adenosineA2A_bioactivities_CHEMBL27.csv.zip"</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </details><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">bioactivities_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">bioactivities</span><span class="p">)</span>
+<span></span><span class="n">bioactivities_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"adenosineA2A_bioactivities_CHEMBL27.csv.zip"</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1">#bioactivities_df = pd.DataFrame.from_records(bioactivities)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"DataFrame shape: </span><span class="si">{</span><span class="n">bioactivities_df</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="n">bioactivities_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -1445,11 +1226,11 @@ Length and type of first element: 13, &lt;class 'dict'&gt;
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (8817, 13)
+DataFrame shape: (4630, 13)
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1489,83 +1270,83 @@ DataFrame shape: (8817, 13)
 <tbody>
 <tr>
 <th>0</th>
-<td>32260</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>38792</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL68920</td>
+<td>CHEMBL132806</td>
 <td>=</td>
 <td>nM</td>
-<td>41.0</td>
-<td>CHEMBL203</td>
+<td>57.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
-<td>uM</td>
-<td>0.041</td>
+<td>Ki</td>
+<td>nM</td>
+<td>57.0</td>
 </tr>
 <tr>
 <th>1</th>
-<td>32260</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>38792</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL68920</td>
+<td>CHEMBL132806</td>
 <td>=</td>
 <td>nM</td>
-<td>41.0</td>
-<td>CHEMBL203</td>
+<td>57.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
-<td>uM</td>
-<td>0.041</td>
+<td>Ki</td>
+<td>nM</td>
+<td>57.0</td>
 </tr>
 <tr>
 <th>2</th>
-<td>32267</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>39908</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL69960</td>
+<td>CHEMBL336217</td>
 <td>=</td>
 <td>nM</td>
-<td>170.0</td>
-<td>CHEMBL203</td>
+<td>42.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
-<td>uM</td>
-<td>0.17</td>
+<td>Ki</td>
+<td>nM</td>
+<td>42.0</td>
 </tr>
 <tr>
 <th>3</th>
-<td>32680</td>
-<td>CHEMBL677833</td>
-<td>In vitro inhibition of Epidermal growth factor...</td>
+<td>41114</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL137635</td>
+<td>CHEMBL134566</td>
 <td>=</td>
 <td>nM</td>
-<td>9300.0</td>
-<td>CHEMBL203</td>
+<td>60.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
-<td>uM</td>
-<td>9.3</td>
+<td>Ki</td>
+<td>nM</td>
+<td>60.0</td>
 </tr>
 <tr>
 <th>4</th>
-<td>32770</td>
-<td>CHEMBL674643</td>
-<td>Inhibitory concentration of EGF dependent auto...</td>
+<td>41122</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL306988</td>
+<td>CHEMBL435022</td>
 <td>=</td>
 <td>nM</td>
-<td>500000.0</td>
-<td>CHEMBL203</td>
+<td>38.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
-<td>uM</td>
-<td>500.0</td>
+<td>Ki</td>
+<td>nM</td>
+<td>38.0</td>
 </tr>
 </tbody>
 </table>
@@ -1573,8 +1354,17 @@ DataFrame shape: (8817, 13)
 </div>
 <p>Note, that we have columns for <code class="docutils literal notranslate"><span class="pre">standard_units</span></code>/<code class="docutils literal notranslate"><span class="pre">units</span></code> and <code class="docutils literal notranslate"><span class="pre">standard_values</span></code>/<code class="docutils literal notranslate"><span class="pre">values</span></code> - in the following we will use the standardized columns (standardization by ChEMBL). Thus, we drop the other two columns.</p>
 <p>If we used the <code class="docutils literal notranslate"><span class="pre">units</span></code> and <code class="docutils literal notranslate"><span class="pre">values</span></code> columns, we would need to convert all values with many different units to nM:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">bioactivities_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"adenosineA2A_bioactivities_CHEMBL27.csv.zip"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1583,19 +1373,16 @@ DataFrame shape: (8817, 13)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-array(['uM', 'nM', 'pM', 'M', "10'3 uM", "10'1 ug/ml", 'ug ml-1',
-       "10'-1microM", "10'1 uM", "10'-1 ug/ml", "10'-2 ug/ml", "10'2 uM",
-       "10'-3 ug/ml", "10'-2microM", '/uM', "10'-6g/ml", 'mM', 'umol/L',
-       'nmol/L', "10'-10M", "10'-7M", 'nmol'], dtype=object)
+array(['nM', 'uM', "10'-8M", "10'3nM"], dtype=object)
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1605,7 +1392,7 @@ array(['uM', 'nM', 'pM', 'M', "10'3 uM", "10'1 ug/ml", 'ug ml-1',
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1643,73 +1430,73 @@ array(['uM', 'nM', 'pM', 'M', "10'3 uM", "10'1 ug/ml", 'ug ml-1',
 <tbody>
 <tr>
 <th>0</th>
-<td>32260</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>38792</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL68920</td>
+<td>CHEMBL132806</td>
 <td>=</td>
 <td>nM</td>
-<td>41.0</td>
-<td>CHEMBL203</td>
+<td>57.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>1</th>
-<td>32260</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>38792</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL68920</td>
+<td>CHEMBL132806</td>
 <td>=</td>
 <td>nM</td>
-<td>41.0</td>
-<td>CHEMBL203</td>
+<td>57.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>2</th>
-<td>32267</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>39908</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL69960</td>
+<td>CHEMBL336217</td>
 <td>=</td>
 <td>nM</td>
-<td>170.0</td>
-<td>CHEMBL203</td>
+<td>42.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>3</th>
-<td>32680</td>
-<td>CHEMBL677833</td>
-<td>In vitro inhibition of Epidermal growth factor...</td>
+<td>41114</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL137635</td>
+<td>CHEMBL134566</td>
 <td>=</td>
 <td>nM</td>
-<td>9300.0</td>
-<td>CHEMBL203</td>
+<td>60.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>4</th>
-<td>32770</td>
-<td>CHEMBL674643</td>
-<td>Inhibitory concentration of EGF dependent auto...</td>
+<td>41122</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL306988</td>
+<td>CHEMBL435022</td>
 <td>=</td>
 <td>nM</td>
-<td>500000.0</td>
-<td>CHEMBL203</td>
+<td>38.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 </tbody>
 </table>
@@ -1729,7 +1516,7 @@ array(['uM', 'nM', 'pM', 'M', "10'3 uM", "10'1 ug/ml", 'ug ml-1',
 <p><strong>1. Convert datatype of “standard_value” from “object” to “float”</strong></p>
 <p>The field <code class="docutils literal notranslate"><span class="pre">standard_value</span></code> holds standardized (here IC50) values. In order to make these values usable in calculations later on, convert values to floats.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1738,27 +1525,27 @@ array(['uM', 'nM', 'pM', 'M', "10'3 uM", "10'1 ug/ml", 'ug ml-1',
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-activity_id            int64
-assay_chembl_id       object
-assay_description     object
-assay_type            object
-molecule_chembl_id    object
-relation              object
-standard_units        object
-standard_value        object
-target_chembl_id      object
-target_organism       object
-type                  object
+activity_id             int64
+assay_chembl_id        object
+assay_description      object
+assay_type             object
+molecule_chembl_id     object
+relation               object
+standard_units         object
+standard_value        float64
+target_chembl_id       object
+target_organism        object
+type                   object
 dtype: object
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1768,7 +1555,7 @@ dtype: object
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -1790,7 +1577,7 @@ dtype: object
 <p><strong>2. Delete entries with missing values</strong></p>
 <p>Use the parameter <code class="docutils literal notranslate"><span class="pre">inplace=True</span></code> to drop values in the current <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> directly.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1804,13 +1591,13 @@ dtype: object
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (8816, 11)
+DataFrame shape: (4630, 11)
 </pre></div></div>
 </div>
 <p><strong>3. Keep only entries with “standard_unit == nM”</strong></p>
 <p>We only want to keep bioactivity entries in <code class="docutils literal notranslate"><span class="pre">nM</span></code>, thus we remove all entries with other units.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1827,12 +1614,12 @@ DataFrame shape: (8816, 11)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Units in downloaded data: ['nM' 'ug.mL-1' '/uM']
-Number of non-nM entries:    69
+Units in downloaded data: ['nM']
+Number of non-nM entries:    0
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1850,7 +1637,7 @@ Units after filtering: ['nM']
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1863,14 +1650,14 @@ Units after filtering: ['nM']
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (8747, 11)
+DataFrame shape: (4630, 11)
 </pre></div></div>
 </div>
 <p><strong>4. Delete duplicate molecules</strong></p>
 <p>Sometimes the same molecule (<code class="docutils literal notranslate"><span class="pre">molecule_chembl_id</span></code>) has been tested more than once, in this case, we only keep the first one.</p>
 <p>Note other choices could be to keep the one with the best value or a mean value of all assay results for the respective compound.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1884,13 +1671,13 @@ DataFrame shape: (8747, 11)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6059, 11)
+DataFrame shape: (3838, 11)
 </pre></div></div>
 </div>
 <p><strong>5. Reset “DataFrame” index</strong></p>
 <p>Since we deleted some rows, but we want to iterate over the index later, we reset the index to be continuous.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -1900,7 +1687,7 @@ DataFrame shape: (6059, 11)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -1938,73 +1725,73 @@ DataFrame shape: (6059, 11)
 <tbody>
 <tr>
 <th>0</th>
-<td>32260</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>38792</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL68920</td>
+<td>CHEMBL132806</td>
 <td>=</td>
 <td>nM</td>
-<td>41.0</td>
-<td>CHEMBL203</td>
+<td>57.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>1</th>
-<td>32267</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>39908</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL69960</td>
+<td>CHEMBL336217</td>
 <td>=</td>
 <td>nM</td>
-<td>170.0</td>
-<td>CHEMBL203</td>
+<td>42.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>2</th>
-<td>32680</td>
-<td>CHEMBL677833</td>
-<td>In vitro inhibition of Epidermal growth factor...</td>
+<td>41114</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL137635</td>
+<td>CHEMBL134566</td>
 <td>=</td>
 <td>nM</td>
-<td>9300.0</td>
-<td>CHEMBL203</td>
+<td>60.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>3</th>
-<td>32770</td>
-<td>CHEMBL674643</td>
-<td>Inhibitory concentration of EGF dependent auto...</td>
+<td>41122</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL306988</td>
+<td>CHEMBL435022</td>
 <td>=</td>
 <td>nM</td>
-<td>500000.0</td>
-<td>CHEMBL203</td>
+<td>38.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>4</th>
-<td>32772</td>
-<td>CHEMBL674643</td>
-<td>Inhibitory concentration of EGF dependent auto...</td>
+<td>41130</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL66879</td>
+<td>CHEMBL341376</td>
 <td>=</td>
 <td>nM</td>
-<td>3000000.0</td>
-<td>CHEMBL203</td>
+<td>423.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 </tbody>
 </table>
@@ -2012,7 +1799,7 @@ DataFrame shape: (6059, 11)
 </div>
 <p><strong>6. Rename columns</strong></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2024,7 +1811,7 @@ DataFrame shape: (6059, 11)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -2062,80 +1849,80 @@ DataFrame shape: (6059, 11)
 <tbody>
 <tr>
 <th>0</th>
-<td>32260</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>38792</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL68920</td>
+<td>CHEMBL132806</td>
 <td>=</td>
 <td>nM</td>
-<td>41.0</td>
-<td>CHEMBL203</td>
+<td>57.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>1</th>
-<td>32267</td>
-<td>CHEMBL674637</td>
-<td>Inhibitory activity towards tyrosine phosphory...</td>
+<td>39908</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL69960</td>
+<td>CHEMBL336217</td>
 <td>=</td>
 <td>nM</td>
-<td>170.0</td>
-<td>CHEMBL203</td>
+<td>42.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>2</th>
-<td>32680</td>
-<td>CHEMBL677833</td>
-<td>In vitro inhibition of Epidermal growth factor...</td>
+<td>41114</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL137635</td>
+<td>CHEMBL134566</td>
 <td>=</td>
 <td>nM</td>
-<td>9300.0</td>
-<td>CHEMBL203</td>
+<td>60.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>3</th>
-<td>32770</td>
-<td>CHEMBL674643</td>
-<td>Inhibitory concentration of EGF dependent auto...</td>
+<td>41122</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL306988</td>
+<td>CHEMBL435022</td>
 <td>=</td>
 <td>nM</td>
-<td>500000.0</td>
-<td>CHEMBL203</td>
+<td>38.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 <tr>
 <th>4</th>
-<td>32772</td>
-<td>CHEMBL674643</td>
-<td>Inhibitory concentration of EGF dependent auto...</td>
+<td>41130</td>
+<td>CHEMBL643209</td>
+<td>Displacement of [3H]ZM-241385 from human adeno...</td>
 <td>B</td>
-<td>CHEMBL66879</td>
+<td>CHEMBL341376</td>
 <td>=</td>
 <td>nM</td>
-<td>3000000.0</td>
-<td>CHEMBL203</td>
+<td>423.0</td>
+<td>CHEMBL251</td>
 <td>Homo sapiens</td>
-<td>IC50</td>
+<td>Ki</td>
 </tr>
 </tbody>
 </table>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2148,10 +1935,10 @@ DataFrame shape: (6059, 11)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6059, 11)
+DataFrame shape: (3838, 11)
 </pre></div></div>
 </div>
-<p>We now have a set of <strong>5575</strong> molecule ids with respective IC50 values for our target kinase.</p>
+<p>We now have a set of <strong>3838</strong> molecule ids with respective Ki values for our target kinase.</p>
 </section>
 </section>
 <section id="Get-compound-data">
@@ -2162,7 +1949,7 @@ DataFrame shape: (6059, 11)
 <h4 id="Fetch-compound-data-from-ChEMBL">Fetch compound data from ChEMBL<a class="headerlink" href="#Fetch-compound-data-from-ChEMBL" title="Permalink to this headline">¶</a></h4>
 <p>Let’s have a look at the compounds from ChEMBL which we have defined bioactivity data for: We fetch compound ChEMBL IDs and structures for the compounds linked to our filtered bioactivity data.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2177,7 +1964,7 @@ DataFrame shape: (6059, 11)
 <h4 id="Download-compound-data-from-ChEMBL">Download compound data from ChEMBL<a class="headerlink" href="#Download-compound-data-from-ChEMBL" title="Permalink to this headline">¶</a></h4>
 <p>Again, we want to export the <code class="docutils literal notranslate"><span class="pre">QuerySet</span></code> object into a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>. Given the data volume, <strong>this can take some time.</strong> For that reason, we will first obtain the list of records through <code class="docutils literal notranslate"><span class="pre">tqdm</span></code>, so we get a nice progress bar and some ETAs. We can then pass the list of compounds to the DataFrame.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2189,10 +1976,10 @@ DataFrame shape: (6059, 11)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "f3456e849f0e43c7b8cfaa0a273b7db2", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "db489e65715347f391c5c784f8c5e1e2", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2208,11 +1995,11 @@ DataFrame shape: (6059, 11)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6059, 2)
+DataFrame shape: (3838, 2)
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2221,7 +2008,7 @@ DataFrame shape: (6059, 2)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -2250,28 +2037,28 @@ DataFrame shape: (6059, 2)
 <tbody>
 <tr>
 <th>0</th>
-<td>CHEMBL6246</td>
-<td>{'canonical_smiles': 'O=c1oc2c(O)c(O)cc3c(=O)o...</td>
-</tr>
-<tr>
-<th>1</th>
 <td>CHEMBL10</td>
 <td>{'canonical_smiles': 'C[S+]([O-])c1ccc(-c2nc(-...</td>
 </tr>
 <tr>
+<th>1</th>
+<td>CHEMBL411</td>
+<td>{'canonical_smiles': 'CC/C(=C(/CC)c1ccc(O)cc1)...</td>
+</tr>
+<tr>
 <th>2</th>
-<td>CHEMBL6976</td>
-<td>{'canonical_smiles': 'COc1cc2c(cc1OC)Nc1ncn(C)...</td>
+<td>CHEMBL7098</td>
+<td>{'canonical_smiles': 'Cn1c2ccccc2n2c(=O)c(-c3c...</td>
 </tr>
 <tr>
 <th>3</th>
-<td>CHEMBL7002</td>
-<td>{'canonical_smiles': 'CC1(COc2ccc(CC3SC(=O)NC3...</td>
+<td>CHEMBL269112</td>
+<td>{'canonical_smiles': 'Oc1c(-c2cccs2)nnc2nc3ccc...</td>
 </tr>
 <tr>
 <th>4</th>
-<td>CHEMBL414013</td>
-<td>{'canonical_smiles': 'COc1cc2c(cc1OC)Nc1ncnc(O...</td>
+<td>CHEMBL7608</td>
+<td>{'canonical_smiles': 'Oc1c(-c2ccco2)nnc2nc3ccc...</td>
 </tr>
 </tbody>
 </table>
@@ -2287,7 +2074,7 @@ DataFrame shape: (6059, 2)
 </ol>
 <p><strong>1. Remove entries with missing molecule structure entry</strong></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2301,12 +2088,12 @@ DataFrame shape: (6059, 2)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6052, 2)
+DataFrame shape: (3838, 2)
 </pre></div></div>
 </div>
 <p><strong>2. Delete duplicate molecules</strong></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2320,13 +2107,13 @@ DataFrame shape: (6052, 2)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6052, 2)
+DataFrame shape: (3838, 2)
 </pre></div></div>
 </div>
 <p><strong>3. Get molecules with canonical SMILES</strong></p>
 <p>So far, we have multiple different molecular structure representations. We only want to keep the canonical SMILES.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2335,7 +2122,7 @@ DataFrame shape: (6052, 2)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2344,7 +2131,7 @@ dict_keys(['canonical_smiles', 'molfile', 'standard_inchi', 'standard_inchi_key'
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[94]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2367,12 +2154,12 @@ dict_keys(['canonical_smiles', 'molfile', 'standard_inchi', 'standard_inchi_key'
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6052, 2)
+DataFrame shape: (3838, 2)
 </pre></div></div>
 </div>
 <p>Sanity check: Remove all molecules without a canonical SMILES string.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[95]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2386,7 +2173,7 @@ DataFrame shape: (6052, 2)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6052, 2)
+DataFrame shape: (3838, 2)
 </pre></div></div>
 </div>
 </section>
@@ -2395,7 +2182,7 @@ DataFrame shape: (6052, 2)
 <h3 id="Output-(bioactivity-compound)-data">Output (bioactivity-compound) data<a class="headerlink" href="#Output-(bioactivity-compound)-data" title="Permalink to this headline">¶</a></h3>
 <p><strong>Summary of compound and bioactivity data</strong></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2409,11 +2196,11 @@ DataFrame shape: (6052, 2)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Bioactivities filtered: 6059
+Bioactivities filtered: 3838
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2425,7 +2212,7 @@ Index(['activity_id', 'assay_chembl_id', 'assay_description', 'assay_type',
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2439,11 +2226,11 @@ Index(['activity_id', 'assay_chembl_id', 'assay_description', 'assay_type',
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Compounds filtered: 6052
+Compounds filtered: 3838
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2461,7 +2248,7 @@ Index(['molecule_chembl_id', 'smiles'], dtype='object')
 <li><p>IC50: <code class="docutils literal notranslate"><span class="pre">IC50</span></code></p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2484,11 +2271,11 @@ Index(['molecule_chembl_id', 'smiles'], dtype='object')
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Dataset with 6052 entries.
+Dataset with 3838 entries.
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[99]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2497,7 +2284,7 @@ Dataset with 6052 entries.
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[99]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2510,7 +2297,7 @@ dtype: object
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2519,7 +2306,7 @@ dtype: object
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -2550,73 +2337,73 @@ dtype: object
 <tbody>
 <tr>
 <th>0</th>
-<td>CHEMBL68920</td>
-<td>41.0</td>
+<td>CHEMBL132806</td>
+<td>57.00</td>
 <td>nM</td>
-<td>Cc1cc(C)c(/C=C2\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)...</td>
+<td>CC(C)CCn1cc2c(nc(NC(=O)Cc3ccccc3)n3nc(-c4ccco4...</td>
 </tr>
 <tr>
 <th>1</th>
-<td>CHEMBL69960</td>
-<td>170.0</td>
+<td>CHEMBL336217</td>
+<td>42.00</td>
 <td>nM</td>
-<td>Cc1cc(C(=O)N2CCOCC2)[nH]c1/C=C1\C(=O)Nc2ncnc(N...</td>
+<td>CC(C)CCn1cc2c(nc(NC(=O)Cc3cccc4ccccc34)n3nc(-c...</td>
 </tr>
 <tr>
 <th>2</th>
-<td>CHEMBL137635</td>
-<td>9300.0</td>
+<td>CHEMBL134566</td>
+<td>60.00</td>
 <td>nM</td>
-<td>CN(c1ccccc1)c1ncnc2ccc(N/N=N/Cc3ccccn3)cc12</td>
+<td>O=C(Cc1ccccc1)Nc1nc2nn(CCCc3ccccc3)cc2c2nc(-c3...</td>
 </tr>
 <tr>
 <th>3</th>
-<td>CHEMBL306988</td>
-<td>500000.0</td>
+<td>CHEMBL435022</td>
+<td>38.00</td>
 <td>nM</td>
-<td>CC(=C(C#N)C#N)c1ccc(NC(=O)CCC(=O)O)cc1</td>
+<td>CC(C)CCn1cc2c(nc(NC(=O)COc3ccccc3)n3nc(-c4ccco...</td>
 </tr>
 <tr>
 <th>4</th>
-<td>CHEMBL66879</td>
-<td>3000000.0</td>
+<td>CHEMBL341376</td>
+<td>423.00</td>
 <td>nM</td>
-<td>O=C(O)/C=C/c1ccc(O)cc1</td>
+<td>Cn1cc2c(nc(NC(=O)Cc3ccccc3)n3nc(-c4ccco4)nc23)n1</td>
 </tr>
 <tr>
 <th>5</th>
-<td>CHEMBL77085</td>
-<td>96000.0</td>
+<td>CHEMBL138593</td>
+<td>45.00</td>
 <td>nM</td>
-<td>N#CC(C#N)=Cc1cc(O)ccc1[N+](=O)[O-]</td>
+<td>O=C(COc1ccccc1)Nc1nc2nn(CCCc3ccccc3)cc2c2nc(-c...</td>
 </tr>
 <tr>
 <th>6</th>
-<td>CHEMBL443268</td>
-<td>5310.0</td>
+<td>CHEMBL324735</td>
+<td>381.00</td>
 <td>nM</td>
-<td>Cc1cc(C(=O)NCCN2CCOCC2)[nH]c1/C=C1\C(=O)N(C)c2...</td>
+<td>Cn1cc2c(nc(NC(=O)Nc3ccccc3)n3nc(-c4ccco4)nc23)n1</td>
 </tr>
 <tr>
 <th>7</th>
-<td>CHEMBL76979</td>
-<td>264000.0</td>
+<td>CHEMBL16867</td>
+<td>0.31</td>
 <td>nM</td>
-<td>COc1cc(/C=C(\C#N)C(=O)O)cc(OC)c1O</td>
+<td>Nc1nc2nn(CCc3ccccc3)cc2c2nc(-c3ccco3)nn12</td>
 </tr>
 <tr>
 <th>8</th>
-<td>CHEMBL76589</td>
-<td>125.0</td>
+<td>CHEMBL335950</td>
+<td>800.00</td>
 <td>nM</td>
-<td>N#CC(C#N)=C(N)/C(C#N)=C/c1ccc(O)cc1</td>
+<td>O=C(Cc1cccc2ccccc12)Nc1nc2nn(CCCc3ccccc3)cc2c2...</td>
 </tr>
 <tr>
 <th>9</th>
-<td>CHEMBL76904</td>
-<td>35000.0</td>
+<td>CHEMBL541455</td>
+<td>60.00</td>
 <td>nM</td>
-<td>N#CC(C#N)=Cc1ccc(O)c(O)c1</td>
+<td>O=C(Cc1ccccc1)Nc1nc2nn(CCc3ccccc3)cc2c2nc(-c3c...</td>
 </tr>
 </tbody>
 </table>
@@ -2627,7 +2414,7 @@ dtype: object
 <h4 id="Add-pIC50-values">Add pIC50 values<a class="headerlink" href="#Add-pIC50-values" title="Permalink to this headline">¶</a></h4>
 <p>As you can see the low IC50 values are difficult to read (values are distributed over multiple scales), which is why we convert the IC50 values to pIC50.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2638,7 +2425,7 @@ dtype: object
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2648,7 +2435,7 @@ dtype: object
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2657,7 +2444,7 @@ dtype: object
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -2689,43 +2476,43 @@ dtype: object
 <tbody>
 <tr>
 <th>0</th>
-<td>CHEMBL68920</td>
-<td>41.0</td>
+<td>CHEMBL132806</td>
+<td>57.0</td>
 <td>nM</td>
-<td>Cc1cc(C)c(/C=C2\C(=O)Nc3ncnc(Nc4ccc(F)c(Cl)c4)...</td>
-<td>7.387216</td>
+<td>CC(C)CCn1cc2c(nc(NC(=O)Cc3ccccc3)n3nc(-c4ccco4...</td>
+<td>7.244125</td>
 </tr>
 <tr>
 <th>1</th>
-<td>CHEMBL69960</td>
-<td>170.0</td>
+<td>CHEMBL336217</td>
+<td>42.0</td>
 <td>nM</td>
-<td>Cc1cc(C(=O)N2CCOCC2)[nH]c1/C=C1\C(=O)Nc2ncnc(N...</td>
-<td>6.769551</td>
+<td>CC(C)CCn1cc2c(nc(NC(=O)Cc3cccc4ccccc34)n3nc(-c...</td>
+<td>7.376751</td>
 </tr>
 <tr>
 <th>2</th>
-<td>CHEMBL137635</td>
-<td>9300.0</td>
+<td>CHEMBL134566</td>
+<td>60.0</td>
 <td>nM</td>
-<td>CN(c1ccccc1)c1ncnc2ccc(N/N=N/Cc3ccccn3)cc12</td>
-<td>5.031517</td>
+<td>O=C(Cc1ccccc1)Nc1nc2nn(CCCc3ccccc3)cc2c2nc(-c3...</td>
+<td>7.221849</td>
 </tr>
 <tr>
 <th>3</th>
-<td>CHEMBL306988</td>
-<td>500000.0</td>
+<td>CHEMBL435022</td>
+<td>38.0</td>
 <td>nM</td>
-<td>CC(=C(C#N)C#N)c1ccc(NC(=O)CCC(=O)O)cc1</td>
-<td>3.301030</td>
+<td>CC(C)CCn1cc2c(nc(NC(=O)COc3ccccc3)n3nc(-c4ccco...</td>
+<td>7.420216</td>
 </tr>
 <tr>
 <th>4</th>
-<td>CHEMBL66879</td>
-<td>3000000.0</td>
+<td>CHEMBL341376</td>
+<td>423.0</td>
 <td>nM</td>
-<td>O=C(O)/C=C/c1ccc(O)cc1</td>
-<td>2.522879</td>
+<td>Cn1cc2c(nc(NC(=O)Cc3ccccc3)n3nc(-c4ccco4)nc23)n1</td>
+<td>6.373660</td>
 </tr>
 </tbody>
 </table>
@@ -2737,7 +2524,7 @@ dtype: object
 <p>Let’s have a look at our collected data set.</p>
 <p>First, we plot the pIC50 value distribution</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2746,7 +2533,7 @@ dtype: object
 </div>
 </div>
 <div class="nboutput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2758,12 +2545,12 @@ array([[&lt;AxesSubplot:title={'center':'pIC50'}&gt;]], dtype=object)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/talktorials_T001_query_chembl_91_1.png" src="../_images/talktorials_T001_query_chembl_91_1.png"/>
+<img alt="../_images/talktorials_T001_query_chembl_92_1.png" src="../_images/talktorials_T001_query_chembl_92_1.png"/>
 </div>
 </div>
 <p>In the next steps, we add a column for RDKit molecule objects to our <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> and look at the structures of the molecules with the highest pIC50 values.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2773,7 +2560,7 @@ array([[&lt;AxesSubplot:title={'center':'pIC50'}&gt;]], dtype=object)
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2787,7 +2574,7 @@ array([[&lt;AxesSubplot:title={'center':'pIC50'}&gt;]], dtype=object)
 </div>
 <p>Show the three most active molecules, i.e. molecules with the highest pIC50 values.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2796,7 +2583,7 @@ array([[&lt;AxesSubplot:title={'center':'pIC50'}&gt;]], dtype=object)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -2828,34 +2615,34 @@ array([[&lt;AxesSubplot:title={'center':'pIC50'}&gt;]], dtype=object)
 <tbody>
 <tr>
 <th>0</th>
-<td>CHEMBL63786</td>
-<td>0.003</td>
+<td>CHEMBL2419149</td>
+<td>0.0042</td>
 <td>nM</td>
-<td>11.522879</td>
-<td><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,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"/></td>
+<td>11.376751</td>
+<td><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,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"/></td>
 </tr>
 <tr>
 <th>1</th>
-<td>CHEMBL35820</td>
-<td>0.006</td>
+<td>CHEMBL2419144</td>
+<td>0.0047</td>
 <td>nM</td>
-<td>11.221849</td>
-<td><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,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"/></td>
+<td>11.327902</td>
+<td><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,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"/></td>
 </tr>
 <tr>
 <th>2</th>
-<td>CHEMBL53711</td>
-<td>0.006</td>
+<td>CHEMBL1093479</td>
+<td>0.0082</td>
 <td>nM</td>
-<td>11.221849</td>
-<td><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,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"/></td>
+<td>11.086186</td>
+<td><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAABmJLR0QA/wD/AP+gvaeTAAAa4ElEQVR4nO3de3yMV/4H8O9cIolIJJMQiQhiNtG4lqiiCMYucXnVEhtWUJepa7qlNbx2Vbte7CjdZkt/MmzbTcUlsVihiLAlqhShSBa5R0RIZJI0l0nm9v39cWKaRkwyl5Ow+32/vLyYmec8ZzKfOc855znPEwEiAiH2JmzrCpD/ThQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxQswgUFi3BBwSJcULAIFxSsF5HRWF1Z+e+6uuy2roj1KFgvotzc2TpdUWXlt21dEeuJ27oCpAl6famzcz9n5/5tXRHrCRCxretA6iEaBAIRANTVZZeU7NRq8wMCEgAEbV0va9Ch8EVRU5Oanv5KTc11AHB0DPDz2yYUuuh0j9q6XlaiQ+ELQau9n5U1Wad7VFq6x9l5QEFBFKLWwcHHwaFLW1fNShSstmc0VmVlTdXpHrm6jvbz21JdfdnRMcDbe3Vb18smFKw2Z8zNnaPR3HRyCurV64hO9zA7+7d6fbGDg69EMqut62Y96mO1sQcP1paXHxWLJVLpMQBxVtZUvb7Yze03Hh7hbV01m1CL1ZbOnj3QocNnDg4OAQGHHB17ZWW9qdHcdnLqHRBwQCB4uT8aarHaTEpKSljYvFWrgnx8VK6uoQUFqysqjonFnlLpMZHIva1rZ6uX+2vx8srNzZ0xY4ZWq339dZmPz1v3739VUhItELTr1euIo6O0rWtnD0haXUVFRd++fQFgwoQJer3+/Pnznp6SXbuGlJTsauuq2Q21WNZD1BUUrETEDh2Ge3rOa+FWBoNh9uzZaWlpwcHBBw4cyM7OnjZtmlqtzsmRe3kt5lrhVtXWyX6JVVffKChYzf5dV5dXW5uh0z1BNJrfasWKFQDg5eWVlZWlVqsDAwMBICwsTK/X869y66EWy3rOzsF6fXFe3lxvb8WjR39Rq/eyx8ViiUgkEYs9RCLJN98EZmUZJRKJh4cH+7u4uLhdu3aHDx/29/efOHFiRkbGwIED4+PjRSJR274d+6JgWU8gaNejx9c6XVFe3gInpyBHR6nBoNbr6//U1QEAnD2be/x4xrPbVlRUrFix4uzZs126dElMTOzQoUNr154zWt1gvdrau5WV5wCgqupiz557TI/r9WqWMINBnZLyU35+ibqBsrKy69evazQaV1dXvV5/7ty51157rc3eAzcULCsZjZri4r+5uAwRCJxcXIZaNJ/57rvvRkdHr1y5cvz48VOmTOFXyTZEE6RWKitLKCxc9/Dhhg4dRlg6Sz569GgASEtL+29NFfAKVmkpxMfDyZNgMHAp/wVQUhIDAF5ei6zYdtSoUUKh8NKlS7W1tfau14uCQ7DKymDuXOjSBSoqYOFC+5f/AtBoblVXXxaJ3D08ZlqxuUQi6devX21t7ZUrV+xetxeEnUaFiFBYCFlZkJsLAgHMnQujRwMAnDgBJSXQqZN99vLCKClRAYCn51yhsL11JYSGht68efPcuXOjRo2ya9VeFBa3WAaDIS8v78yZM3f37IH334dp06BfP2jfHrp1gzFjYMECePwYXF3rX+3mBtXVdq5yWzMaq9XqOACwZaI8NDQUAK5fT7dXrVrfd+/UmHm2RS3W7t27//Of/2RmZmZlZeXm5mq1WgDY/cYbvb/77ucXdeoEUilIpRASAgcPQlgYVFVBdjZ062Zb/V84avV+g+GnDh1GOjv3tbqQkSPHd++effp0QF0dODrasXatR68x92zzwdq1a9emTZvu379vesTX11cqlRqGDIGJE+vDJJWCm9vP25SWwvLlAABbt4JGA/9ds39LlhwJChq9fPkSWwrx9HRxdw/Iz4crV2DkSHtVrZVUFRg1T5qbpTJ/xkev1zs7OwsEgo8++ujQoUM3b96srq5u6emiixexTx+Uy2076fRiuXHjBgB4enpqNBobi4qKQgD885/tUq/W8+Bb3YH+FfGvVpyJrDLzsmaCdefOHQDo0aOHNVXIzESxGB0cMC/Pms0t8cEH+PAhImJMDN8dLV68GABWr15te1GHDiEAjhtne0mtxYi3/6/26x7lsf7lZ+dXnZ1vrolpJlgJCQkAMGXKFES8ffu2Wq22rCqzZiEArlxp2VaWk8lw4UJExBkzOO7lp59+cnV1FQgE9+7ds7200lIUCtHZGWtrbS+MO22l8d+Lq2P9y2O7l6f+RWM0oOaJuXUczYwKb9++DQD9+vUDgEmTJkkkkpycHAuOxuvXg1AIu3fDw4cWbGU5Ly/o1QuSkrjuBPbs2VNZWTlmzBi21sVGEgn07QsaDVy9anthTTh//vzy5ctDQkLefvvtW7du2VKU+j+G4xOrCpJ0jh4CWazLoLVOAiE4eZq9RNt8Tt98800A2L9/f1lZmUAgcHFxMRgMlkV9+nQEQHscO8yIiMC6OpwyBadOxR9+wM8/R63W/nt59dVXASA+Pp7998CBAxb0OJuyciUC4MaN9qhcA0aj8ZNPPhGLfzEyGzlyZFxcXK3lzeOVw5lxgRWx/uXHJ1dWPWjpp99MsAICAgAgPT09JSUFAF577TVLq4U//ogCAbq44OPHFm/bAhkZePcuRkQgIp45g87OOGYMAmD37qhSob0Wz2VlZS1fvlwgELi7u9fV1SFiXFycQCAICQkpLCy0utgjRzA+HjUazM2t7yParrKycubMmQAgEAiioqLS0tIUCoVEImHxcnd3l8vlt2/fbklRtbW1UVFRDqJ2+yfkX/hDtV7TzBrGhswFq6qqSigUOjo6arXazz//HAAWso6MpaZMORESsnvzZmu2NSs9HX180M8P9+6tf+TgQUxOxgEDEAABsE8fTEiwvvyysrLY2FiZTCYQCACgU6dOALB27VqDwZCRkREUFAQAvr6+V69eta78NWtwwgQ0GPDLL/H4cevraXLv3j22mt7V1fXgwYOmxzUaTUJCgkwmMzVggwcPVqlUZsa29+/fHzp0KAA4OTntjT1gaU3MBevy5csAMGDAAERcsmQJAERHR1u6A0T88coVAHBzc7O4728WSxUAjh6NlZW/eEqvxy+/RH//+niNGoWXL9e0vOS6urojR45MmzbN8encZYcOHebOnbt69WoHBwcACAsLq6ioKC0tZRPoTk5O+/bts+ItrFmDH3+MKpV9gnX06NGOHTsCQO/evdPT002Pb9++/fDhwzqdDhGvXbsml8tN6wq9vb0VCkV2dnajos6dO+ft7Q0A3bp1++GHH6yojLlg7d69GwDmzJmDiMOHDweAs2fPWrEPRPz1r38NAB9++KF1mz8rNRU9PREAJ07Emmcyc/Qo6vVYV4cqFXp7IwAOHBgqk8lu3Lhhvthr165FRUV1enpyUygUjhgxQqVSVT5NbkpKipeXFwD0798/Pz+/rq7urbfeYsedDRs2GI0WHCxqanDNGszPx+nTcetWPHgQFy7E77+35KfwlF6vVygUrFmNiIioqvp5homNZAGgS5cuCoUiNzeXPahSqQYOHGh6mzKZLCEhQavVGo3G6Oho1j8bM2bMY2s7MOaCFRUVBQBbtmwxGo3u7u4AYPVuvv/+ewDo2LFjWVmZdSU09N132LEjAuDkyfhsW370KAJg796YkIBGI1ZU4NatWew7KhKJ5s2bl/fMvFp+fr5SqfzVr35lOlIEBwdv2LDh2VciYmZmZu/evQHAx8eHfZujo6OFQiH7UGuejfkzqqpQocCAAHz3XczPxzt30N8fly2rb19790alEktLW/rTKCkpYcc4sVisVCqf2VfV3/72t+DgYPa+RCLR5MmTjx07xq7d+P777+fNm+fs7Mye9fX1ZTMAAoFg/fr1Fg/UGjAXLNbOnzx5Mi8vjzWbVu/GVNpmm3ta58+nenoaATAiAnW6Jl7wzTcYEFD/IQ0bhufOISKWlJQoFAonJycAcHBwkMvlRUVFjbpQ7CcbFRWVmppqvg5qtXrs2LHsIBgXF4eIJ06ccHNzA4Bhw4Y9evTIzLaHD2PXrgiAYjGuXFk/pPnkE/zXv3Dduvr2FQBdXHDRImy283b16tXu3buz/p/54wk7CLZv3970ThUKRX5+PiKWl5erVKr+/fsDQPfu3du3b3/48OFmdtwcc8FiR4QHDx4cO3YMAMaPH2/FDsrLy9k/zpw5AwCenp6VjTpEljh16pSzs3NIyPqFCw1mRnxaLapU9T2wESP2yGQylpWcnJzIyEjWujg7O7dr165hF+r06dMtvwZLp9MtX76cfbkVCoXRaLx16xb7jP38/K5fv/7sJoWFOGNGfW4GDWo6NHV1mJCA48ahQIAA6OxcM3r0uF27djX5Q1OpVOwtvPHGGw9bNqosKSnZtm2baR5OLBZPmzbt1KlT7CC+bt06AJg6dWoLfwhmPDdYDx8+BAAPDw9E3Lx5MwCsWrXK0tJTUlI8PDwSng7M2DzQ4MGD169fn5CQcPfuXYsupjt+/DhrcuRyeUta6aoq3LgRg4NfZd2IWbNmZWZmImJ6evq4ceM6duwoEokadaEspVKpWHckPDy8pqamqKiIjaR69uypbTCTptPpPv1U26EDAmDHjvj559hs9e/dw9WrccKEr1kC3Nzcli5d+uOPP7JnNRrNggUL2FNyuVxr+azdtWvXIiMjWS6DgoJYsL777jsAGDJkiKWlPeu5wUpKSgKAUaNGIeKsWbMA4KuvvrKo6NOnT7OGl01S3Lx508PDgw1bTBwcHIKDg8PDwzds2JCYmPjs8MQkISGBjciWLVtmUR/5yZMnq1evNh0E2fCNzZ78/ve/t+gdNenUqVPsTQ0dOrSoqEij0URGRp5jB2BERLx+/fqQIUNGj/6GdQoLCiwovLa2Ni4ubmSD9Q+vv/76tm3bBg0axBra/fv321L5R48ebd68OTY21vRfAHB3d7elTOa5wdq6dSsArFixAhHZ1Mi1a9daXu4333zDPstFixYZDIbU1FQ2mAoNDf3666/XrVs3ZcqUHj16wDO8vLzGjh0bFRW1e/fuH374gQ1w9u3bxxqGNWvWWPc+CwoK5HK5q6trQUEBPp09+fTTT60rrZHbt2/37NkTALp27drwp1RRUbFy5Up2JapU2vvUqTqrd3H37l2FQuHp6ck64AAQGBiYlpZmj+r/AhtCPnnyxMZynhusuXPnAoBKpULE4uLis2fPtnyhSGJiIpsBWrJkicFguHLlCpv5nTx5cqNCKioqLl68GBMTs2zZslGjRnl4eDTKmVAo9PPzY53rjz76yJa3ioimibQRI0YAwJkzZ2ws0OTJkyfs2hsXF5cjR44gYmJiYrdu3Vg/JioqypaepUlNTc3f//53oVAoEAiKi4ttL/BZbA7i8uXLNpbz3GCx/pCpkWy5/fv3s9bl/fffR8SUlBT2JZg5c2ZLugJqtfrChQvR0dFyuXzEiBFsJNyxY8dJkyYhok6ni42NtbH9t332pEm1tbWRkZHsy9CnTx/2xRg2bNjNmzftuBd8ep7tzp077L92iazJjBkzAIANdW3x3GDduHHD0dFRIBCEh4dnZGS0sLi4uDiWKoVCgYjffvstm0CaPXu2rsm5geZotdqYmBgA8Pb2rqmpOX78OBt2WXEy1SQ/Px9snj15nujoaIFA4OXl5ebmFh0dzeNWH2y2+dixY4WFhRKJxNfX146Fr127Fuwxlf3cYKnV6oZ93qVLlzY7oI2JiWEjeXbMMg3iFi9ebMtUGyIOGTIEAD777DOj0ThgwADTMdo6LJ0ymcyWKpnBjvvNToZZbdmyZayDaDAY2Je/4VS7jdjplsjISBvLaWZ1A+vzskaoffv2CoXieVPnO3bsEAgEAoHgr3/9KzYYxC1dutSiQVyTjh49CgA+Pj7sZCoA+Pv7s1UGVtixI2f06CMffmjT8fR5Gk7TcPLJJ5+YxlXsHIAdj7bffvstAAwfPtzGclp0f6y7d++Gh4ezHrREIlEqlY1OXKSnp4tEIqFQuHPnTmzQzbJ6ENeI0WgcPHgwAMTExBgMBnaCYs8eK9ctsGWtX35pl6o11nCahhP2NZswYQIiTp48GQAOHTpkr8ILCgoAoHPnzjaWY8GN165cuTJu3DjWJ+3atatKpWrYbfrqq6/YRNfu3bvZAZF1s+zl4MGDpoYqPv7k0KFHgoKM1nVg+vZFgObPllhn27ZtALB8+XIupSMiYnp6OgBIpVJE/MMf/gAAW7ZssVfhRqORzT6aTplYx+I7+iUnJ4eEhLB4BQYGxsbGNuw/7dy5k6Xqz/a++oQ1VH37vr537329HgMDEQCtWKui1WK7digUov26Jb8wb9481rJyKR0REWtra4VCoVgs1mq127dvBwC5XS+FYtOWNvYRrblVpNFoTEhIMJ1v6tevHztps3XrVtbNstfEYyMHDxYDoFSKej1+8QUC4CuvNH9upJFbtxAAAwN5VBARkc2JX7x4kdcOEBHR398fADIzM0+cOAEAY8eOtWPhbD26aQW2day/B6lOp1OpVF27dmXxkkqlbArHlvGaeXo9BgUhAMbFoVaLPXogAP7zn5YVEheHADh9Or8aThKJHGw8jjSLra04efJkRkYG6yHYsfD33nsPADZt2mRLIdbfbUYsFsvl8pycHJVK1blz56qqKhcXly+++EIul1tdpnkiESgUAACbNoFIBGvWgLs7qNWWFXL7NgBAv372rx4AZGXBvXvHpdK6RqdE7Y59jbOysnr27Ong4PDgwQONxuwV75bo1asXAGRn2/SLg229jVG7du3kcvm9e/dOnjyZk5Mzf/58Gws0b84c6NkT7tyBQ4dgwQLIy4PFFt6Yw8EBvL2hr/V3XTCHXWQVGMj9V1eaPnuxWOzv7280GnNzc20pMCkp6fz58+zfptTaUqB97o/l7u4+cODAzp0726U0Mxwc6hutjz4CBwewqF3IzYX33oONG6GgAAoLuVSPa3PYEAsW++xtzAEibty4MSwsbObMmY8fPwYAX19fWwpkXr5bRc6fD35+kJ4OJ05YtmF5OSQnQ3w8GAy8rhFttWA1DJMtwfrpp5+mT5/+wQcfIOJbb73VqVOnrKys3/3udyKRaMuWLbbU8OW7HbejI2zZApmZMH48AEBODgQENPGyujrIyYGsrJ//zJ4Ns2bBgQMQGsqrbq0ZLIFAkJubazAYIiIi+vfvb8UN3G7evDl9+vTs7GyJRLJ3794JEyYcP348MjKyvLw8MDDQdKmFlewzkGh1ffrUT52Hh2NdHWZnY3IyqlQYFYUyGQYEoEhUvwjY9OePf0SlElNTccUKnDPH/lWqqkKhEB0duVyE/SwfHx8AaPJyj5aIi4tzcXEBgFdffTU7O1uv12/YsIHNQU6dOtX2Ue3L12Ix/fpBUhJMnQoAMG1aE4dFsRh69QKptP5vqRScnSE1FQYNgq+/BgBYsgTCwupLsIv0dDAaoXdvcHCwW5lmSKXSoqKiS5cusYX2LafX6//0pz+xI11kZGRMTIxGowkLCzt9+rRIJFIqlWvWrDFdXWI9G4PZViIiMD0dly7F8HB87z0MCsKwMHznHdy+HU+exIyMJpqNsjJkS5jKy/HjjxEAhUL8+GNr9m40YkoKNjwd/+9/Y2kpXr2Ku3ahtSfHLbNz585BgwaZLgls4aqkBw8eDBs2DAAcHR3Z5cepqalsKa+Xl1dycrK9qvcSBwsR163DV16xsoToaBQKEQBnzWri4sTnyctDpRKlUgTAnTt/fnz8eFy3DhFx8WK06/Xe5sjlctO12j169Ni0aVNRUZGZ158/f75Lly4A4Ofnd+nSJUSMjY1lSylDQkKsPqo26WUNVlQUImJVFdqyvuPQIXRxQQAcPryZW5Y8efJkx44dv/lNsanH1q0b7mrw2wUjIvCdd/DWrVYNFiKWlZWpVKqG16PKZLLExMQmlyrt27cPAEJDQx89eqTRaBYtqr9JvVwut3oN0vO8rMGyl9RU9PNDAOzVC+/caXxPotra2sTExPDwcHaZ1KhRnzk7Y3g4JibW38cmLQ0VCvzwQ4yIQLUaf/tbXLSoVYPFGI3G5OTk8PBwh6f9O6lUqlQqn117nZiYqNfr79+/z36Bj5OT0xdffMGjSv/rwULEhw9xyBDs37/C09P32LFjDZ8ytQRisTgsLOzgwdPsflilpahS4YgR9a2XRIIzZyIi/uMf6OPTBsEyKSoqUiqV7JIhAGjXrl14eHhycnLDBuzEiRNsjatUKrX7enwTChYiYnU1zp+/igVo+/btpsdXrVoVHBysVCpZ36W6ujohQT1x4s9zGR4e+PbbeOFC/c3TjEZcsKDxrW9an8FgYA2Y6d5rgYGBSqWyuLhYqVSyOYVJkybZ9+Y/jVCw6hmNRqVSyYbZpmuL2VDLYDBcuHBBLpe7ubmFhv4RAEUilMkwNhZtu6EfdwUFBR988IFpBQo7UIpEoo0bN9q+Xtw8CtYvxMfHs1GSTCYrKytLS0tbu3Zttwa/A2HSpPAdO9DmyzlblakBGzBggEwmS0pKaoWd0u8rbOzy5ctvvvnm48ePJRKJ+uminJ49e86ZM2fOnDl2ua1tW6mtrWXXTbUCClYTCgsLp0+f3r1796SkpKlTp86dO3fcuHF2mIz+X0LBahoiVlRUODk5tdpX/L8MBYtw8fKtxyIvBQoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEuKFiECwoW4YKCRbigYBEu/h9OXsFHsMESgAAAAeR6VFh0cmRraXRQS0wgcmRraXQgMjAyMS4wOS4yAAB4nHu/b+09BiDgZUAASSCWBeIGRgEGDSDNzMTmAKZZBBxQ+TCaHUIzszlkgGlGmABCAlUDXCEmgwNqB7pWTKNwGgFTYsqgAKQR4twMjBpMjEwJTMwJzCwZTCysCaxsGUxs7AnsHAkcnBlMnFwKXNwZTNw8CTy8GUy8fAmc/An8AkCFggmCQgpCwhlMwiIJIqIZTKJiCWLiDGISGUyCjAkSQgkCzAkC7Al8XAkirKyMTMwsgmysbOwCzCysHOwC/Jys3Fx8vDxswiKiYhJC4maMQCfBg7pfy8qhJsrFAcT58+yH/eTFX+1BbKeap3bz2xjB4m+UX+6NFVECi6vVt9hf7F+5D8SWc3Ozj654vh/EvjVFab9/v8gBEPtS9JP9NRvWgsXF7AMPaKScALPtg6oPVDXHgfVavltz4H+JoS2IHV52/oDOwnqwmszrPw+cWDQNrCal4eOBLdnTwfae/X7wQKL8JjCbycnswDzxYDB79/9D+9fafQOb07FK2KE38q0diC2wJsfh0LqTe0Hs56xVDu57T4HN39680sE7nBPszgnh5x26a+eAxZeuOuFgP7kNrLeu7p3D7asQex9qznGw04HYJQYADVuGSjjxB+kAAAJnelRYdE1PTCByZGtpdCAyMDIxLjA5LjIAAHicfVVbbhsxDPz3KXQBC3xK5GdsB0VQxAbatHfof+6PkjJsKajQXYvQamdJijOUDyWvH5fvfz7L86LL4VAK/Ofn7uU3A8DhveSknF6/vV3L+ePl9Fg5335dP34W0kIe38T9FfvycXt/rGAJYHUwEytcoRkQF6gwrvkllXPB6iIqnhN0UNngOPxBFTFCCcfhzIQ2OAl/R6iIbGzxvjHjNrCOwMCK8RBfBA67boCtXGO1d1Ho5YjVwLjBBtjvoRsrmJQjVSYk6Rukhcvw1E1AKWeszcU2SE8kV4rXvSVSm6rufCJkeK5OzVwzEcJOvnOKmFCtAgI2diLMtKs6Jj3HVsUYvaVTd1Pd1RM5oT3K01Xu8V0oQm2gcoeqNCcKFtDI+za+llvGh4biqQ92VNuGT5qi5ia991BnNRIdk3+Qg6eoJLGkjitSqGlb0uQpaIROI6YEtfs0PVxybW4AlFsHjzx2pScYSIfWgrDMwthhVyRKkjSK2DmyjJ2hqG8rT0lScNRd2NMnEaltffJAUg8J53tqtO+iEMNb6VU0OMRBUMu+2wCzjaSaASLdq26+A75eL1/Oh/uJcbpdL/PEoBzzYIg+Lzz7X3LMNs9bZzPHQ2mzZSVGn40pMWx2n8Tw2WISA9dGwmFw6RdJg7T0haRBXuQvaVAWlUsa1EXNMjy3RbWSBvuiztwK2iJCHMYXtUkaWlUlaQgX9UgaokUlkoZ4UQOmIVlol7GiC7+S0aebzDhWZzqUGWfazwW7Lzy3QCNhXSqaali5z+fHP03MD38BHiZAmZ0MAkUAAAE8elRYdFNNSUxFUyByZGtpdCAyMDIxLjA5LjIAAHicHVG5bcRADGzFoQ5YEfwfHFyAY5ewuRw4dfEmN5I05HzU9+em3837evYjz77urXvvH309m+X10L2pv/f19dr08XcxFGbaEkBP5PUmKFWz1U8qtPVGUE0mXQzIkrreNwKRpORCcBFiGRqKkayeNUJxiBFqGOsmSEzxw3QxbJGbQZi413oaqe3UL2JeAwmwl+ZA5mZ+oGLPGgOm4MrGDBQVJwaqCOtQHTSFZ60qzTraHW0fXWmopUx0MFMv7pqUXHGI6DS9pchGnSE1YtSzpaNOVGNRaYi4j9G0roHBs6TdLPo6At7h2gtr+DVIoTudNikNWOcIkTkCqU3jTh1991lh5rF34OijtTA7p/afCVDr/Ceyc5dQyMRucwJmT15//52laddLjErbAAAAAElFTkSuQmCC"/></td>
 </tr>
 </tbody>
 </table>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2870,119 +2657,7 @@ array([[&lt;AxesSubplot:title={'center':'pIC50'}&gt;]], dtype=object)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (6052, 5)
-</pre></div></div>
-</div>
-</section>
-<section id="Freeze-output-data-to-ChEMBL-27">
-<h4 id="Freeze-output-data-to-ChEMBL-27">Freeze output data to ChEMBL 27<a class="headerlink" href="#Freeze-output-data-to-ChEMBL-27" title="Permalink to this headline">¶</a></h4>
-<p>This is a technical step: Usually, we would continue to work with the dataset that we just created (latest dataset).</p>
-<p>However, here on the TeachOpenCADD platform, we prefer to freeze the dataset to a certain ChEMBL releases (i.e. <a class="reference external" href="http://doi.org/10.6019/CHEMBL.database.27">ChEMBL 27</a>), so that this talktorial and other talktorials downstream in our CADD pipeline do not change in the future (helping us to maintain the talktorials).</p>
-<div class="alert alert-block alert-info"><p>Note: If you prefer to run this notebook on the latest dataset or if you want to use it for another target, please comment the cell below.</p>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># Disable this cell to unfreeze the dataset</span>
-<span class="n">output_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
-    <span class="n">DATA</span> <span class="o">/</span> <span class="s2">"EGFR_compounds_ea055ef.csv"</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">float_precision</span><span class="o">=</span><span class="s2">"round_trip"</span>
-<span class="p">)</span>
-<span class="n">output_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
-</pre></div>
-</div>
-<div class="output_area rendered_html docutils container">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>molecule_chembl_id</th>
-<th>IC50</th>
-<th>units</th>
-<th>smiles</th>
-<th>pIC50</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>CHEMBL63786</td>
-<td>0.003</td>
-<td>nM</td>
-<td>Brc1cccc(Nc2ncnc3cc4ccccc4cc23)c1</td>
-<td>11.522879</td>
-</tr>
-<tr>
-<th>1</th>
-<td>CHEMBL35820</td>
-<td>0.006</td>
-<td>nM</td>
-<td>CCOc1cc2ncnc(Nc3cccc(Br)c3)c2cc1OCC</td>
-<td>11.221849</td>
-</tr>
-<tr>
-<th>2</th>
-<td>CHEMBL53711</td>
-<td>0.006</td>
-<td>nM</td>
-<td>CN(C)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1</td>
-<td>11.221849</td>
-</tr>
-<tr>
-<th>3</th>
-<td>CHEMBL66031</td>
-<td>0.008</td>
-<td>nM</td>
-<td>Brc1cccc(Nc2ncnc3cc4[nH]cnc4cc23)c1</td>
-<td>11.096910</td>
-</tr>
-<tr>
-<th>4</th>
-<td>CHEMBL53753</td>
-<td>0.008</td>
-<td>nM</td>
-<td>CNc1cc2c(Nc3cccc(Br)c3)ncnc2cn1</td>
-<td>11.096910</td>
-</tr>
-</tbody>
-</table>
-</div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"DataFrame shape: </span><span class="si">{</span><span class="n">output_df</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="c1"># NBVAL_CHECK_OUTPUT</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-DataFrame shape: (5568, 5)
+DataFrame shape: (3838, 5)
 </pre></div></div>
 </div>
 </section>
@@ -2990,17 +2665,17 @@ DataFrame shape: (5568, 5)
 <h4 id="Write-output-data-to-file">Write output data to file<a class="headerlink" href="#Write-output-data-to-file" title="Permalink to this headline">¶</a></h4>
 <p>We want to use this bioactivity-compound dataset in the following talktorials, thus we save the data as <code class="docutils literal notranslate"><span class="pre">csv</span></code> file. Note that it is advisable to drop the molecule column (which only contains an image of the molecules) when saving the data.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">output_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"EGFR_compounds.csv"</span><span class="p">)</span>
+<span></span><span class="n">output_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">DATA</span> <span class="o">/</span> <span class="s2">"A2A_compounds.csv"</span><span class="p">)</span>
 <span class="n">output_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -3032,50 +2707,50 @@ DataFrame shape: (5568, 5)
 <tbody>
 <tr>
 <th>0</th>
-<td>CHEMBL63786</td>
-<td>0.003</td>
+<td>CHEMBL2419149</td>
+<td>0.0042</td>
 <td>nM</td>
-<td>Brc1cccc(Nc2ncnc3cc4ccccc4cc23)c1</td>
-<td>11.522879</td>
+<td>N#Cc1sc(=S)n(-c2ccccc2)c1/N=C/c1ccc(Br)cc1</td>
+<td>11.376751</td>
 </tr>
 <tr>
 <th>1</th>
-<td>CHEMBL35820</td>
-<td>0.006</td>
+<td>CHEMBL2419144</td>
+<td>0.0047</td>
 <td>nM</td>
-<td>CCOc1cc2ncnc(Nc3cccc(Br)c3)c2cc1OCC</td>
-<td>11.221849</td>
+<td>N#Cc1sc(=S)n(-c2ccccc2)c1/N=C/c1ccc(F)cc1</td>
+<td>11.327902</td>
 </tr>
 <tr>
 <th>2</th>
-<td>CHEMBL53711</td>
-<td>0.006</td>
+<td>CHEMBL1093479</td>
+<td>0.0082</td>
 <td>nM</td>
-<td>CN(C)c1cc2c(Nc3cccc(Br)c3)ncnc2cn1</td>
-<td>11.221849</td>
+<td>S=c1sc2c(ncn3nc(-c4ccco4)nc23)n1-c1cccc(I)c1</td>
+<td>11.086186</td>
 </tr>
 <tr>
 <th>3</th>
-<td>CHEMBL66031</td>
-<td>0.008</td>
+<td>CHEMBL2419139</td>
+<td>0.0100</td>
 <td>nM</td>
-<td>Brc1cccc(Nc2ncnc3cc4[nH]cnc4cc23)c1</td>
-<td>11.096910</td>
+<td>CCn1c(/N=C/c2ccc(Br)cc2)c(C#N)sc1=S</td>
+<td>11.000000</td>
 </tr>
 <tr>
 <th>4</th>
-<td>CHEMBL53753</td>
-<td>0.008</td>
+<td>CHEMBL1092271</td>
+<td>0.0160</td>
 <td>nM</td>
-<td>CNc1cc2c(Nc3cccc(Br)c3)ncnc2cn1</td>
-<td>11.096910</td>
+<td>C=CCn1c(=S)sc2c1ncn1nc(-c3ccco3)nc21</td>
+<td>10.795880</td>
 </tr>
 </tbody>
 </table>
 </div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3089,7 +2764,7 @@ DataFrame shape: (5568, 5)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-DataFrame shape: (5568, 5)
+DataFrame shape: (3838, 5)
 </pre></div></div>
 </div>
 </section>
@@ -3108,6 +2783,15 @@ DataFrame shape: (5568, 5)
 <li><p>What is the difference between IC50 and EC50?</p></li>
 <li><p>What can we use the data extracted from ChEMBL for?</p></li>
 </ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
 <script type="application/vnd.jupyter.widget-state+json">
 {"state": {}, "version_major": 2, "version_minor": 0}
 </script></section>
